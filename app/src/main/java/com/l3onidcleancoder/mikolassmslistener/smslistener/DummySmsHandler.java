@@ -3,6 +3,8 @@ package com.l3onidcleancoder.mikolassmslistener.smslistener;
 import android.content.Context;
 import android.telephony.SmsMessage;
 
+import com.l3onidcleancoder.mikolassmslistener.ui.settings.SmsReceiverNumberProvider;
+import com.l3onidcleancoder.mikolassmslistener.ui.settings.WebServerAddressProvider;
 import com.l3onidcleancoder.mikolassmslistener.util.LogUtils;
 
 import java.util.List;
@@ -23,7 +25,9 @@ public class DummySmsHandler implements SmsHandler {
 
     private void handle(Context context, SmsMessage sms) {
         LogUtils.debug("***");
-        LogUtils.debug("*  from: " + sms.getOriginatingAddress());
+        LogUtils.debug("*  server:  " + WebServerAddressProvider.get(context));
+        LogUtils.debug("*  from:    " + sms.getOriginatingAddress());
+        LogUtils.debug("*  to:      " + SmsReceiverNumberProvider.get(context));
         LogUtils.debug("---------------------------");
         LogUtils.debug(sms.getMessageBody());
     }

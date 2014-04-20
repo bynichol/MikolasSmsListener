@@ -1,5 +1,11 @@
 <resources>
+
     <string name="app_name">Mikola\'s  Sms Listener</string>
+
     <string name="webServerAddress">Server Address</string>
     <string name="defaultWebServerAddress">domain.com</string>
+
+    <string name="smsReceiverNumber">SMS Receiver Number</string>
+    <string name="defaultSmsReceiverNumber"></string>
+
 </resources>

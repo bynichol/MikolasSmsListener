@@ -7,4 +7,9 @@
         android:title="@string/webServerAddress"
         android:defaultValue="@string/defaultWebServerAddress" />
 
+    <EditTextPreference
+        android:key="sms_receiver_number"
+        android:title="@string/smsReceiverNumber"
+        android:defaultValue="@string/defaultSmsReceiverNumber" />
+
 </PreferenceScreen>
