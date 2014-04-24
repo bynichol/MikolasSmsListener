@@ -15,7 +15,7 @@ import java.util.List;
 public class SmsListener extends BroadcastReceiver {
 
     private final SmsExtractor smsExtractor = new SmsExtractor();
-    private final SmsHandler smsHandler = new DummySmsHandler();
+    private final SmsHandler smsHandler = new SenderSmsToServer();
 
     @Override
     public void onReceive(Context context, Intent intent) {

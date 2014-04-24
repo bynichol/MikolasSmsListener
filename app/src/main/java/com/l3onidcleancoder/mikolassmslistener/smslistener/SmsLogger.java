@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by Leonid on 20.04.2014.
  */
-public class DummySmsHandler implements SmsHandler {
+public class SmsLogger implements SmsHandler {
     @Override
     public void handle(Context context, List<SmsMessage> smsMessages) {
         LogUtils.debug("------------------");
